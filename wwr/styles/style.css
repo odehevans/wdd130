@@ -1,8 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap');
+
 body {
   background-color: #F1FAEE; 
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Berkshire Swash", "Brush Script MT", serif;
+}
+
+h2 {
+  margin: 0;
+}
+
+
 header {
   background-color: #FFFFFF; 
+}
+
+#logo_link {
+  padding-top: 5px;
+}
+
+.logo, .icon {
+  width: 80px;
+}
+
+.icon {
+  padding-top: 10px;
 }
 
 #content {
@@ -10,15 +38,29 @@ header {
   margin: 0 auto;
 }
 
+
 nav a {
   text-align: center;
   color: #457B9D;
   text-decoration: none;
+  padding: 35px;
+}
+
+main section img {
+  box-sizing: border-box;
 }
 
 nav a:hover{
   background-color: #457B9D; 
   color: #FFFFFF;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+
+.card-img {
+  border: 10px solid #d9c2a3;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -42,26 +84,37 @@ main section {
   background-color: #F1FAEE; 
   color: #457B9D;
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover, .join:hover {
   background-color: #F1FAEE; 
   color: #E63946;
 }
+
 .msg {
   background-color: #F1FAEE;
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 .msg h2 {
   color: #333333;
-
+  font-family: "Berkshire Swash", "Brush Script MT", serif;
 }
 .msg p {
   color: #333333;
+  font-size: .8em;
+  padding-bottom: 15px;
 }
 
 .home-title {
   color: #333333;
+  font-size: 2em;
+  margin-top: 10px;
 }
 h4 {
   color: #333333;
@@ -69,6 +122,7 @@ h4 {
 
 footer {
   background-color: #FFFFFF; 
+  padding: 25px 50px;
 }
 
 footer h3 {
@@ -77,6 +131,7 @@ footer h3 {
 footer a {
   color: #457B9D;
   text-decoration: none;
+  margin-top: 200px
 }
 footer a:hover {
   color: #E63946;
@@ -88,10 +143,10 @@ footer p {
 
 footer p a:hover {
   text-decoration: underline;
-} 
+}
 
-.logo, .icon {
-  width: 80px;
+footer .social img {
+  padding-top: 15px;
 }
 
 #hero-img {
