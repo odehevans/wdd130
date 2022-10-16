@@ -63,7 +63,6 @@ nav a:hover{
 #profile-top {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* background-color: #C3D6DA; */
 }
 
 #profile-img {
@@ -165,6 +164,101 @@ nav a:hover{
 #work-details section span{
   font-weight: normal;
 }
+
+/* Contact Us Page */
+#contact-area {
+  width: 100%;
+}
+
+#contact-details {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px
+}
+
+#contact-details h4 {
+  text-align: right;
+  align-items: center;
+  vertical-align: middle;
+}
+
+#contact-details p {
+  align-items: center;
+  display: flex;
+
+}
+
+#contact-form {
+  padding: 30px;
+}
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: 0.5em;
+}
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  display: none;      
+}
+.moveDown {
+  margin-top: 3em;
+}
+
 
 
 

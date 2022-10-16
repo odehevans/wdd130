@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Works</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header>
+    <a id="logo_link" href="index.html">
+      <img class="logo" src="logo.png" alt="MyLogo" />
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="works.html">Work Experience</a>
+      <a href="contact.html">Contact</a>
+      <a href="site-plan.html">Site Plan</a>
+    </nav>
+  </header>
+  <main class="content">
+    <div id="title-area">
+      <div id="image-box">
+        <img src="images/team_background.jpg" alt="team" />
+      </div>
+      <div class="title-overlay"></div>
+      <section class="title-text">
+        <h1>Let's Get In Touch</h1>
+        <h4>Feel free to reach me. I have worked with various people, from small to large teams, and with people of different culture and nationalities. I'm easy to relate with.</h4>
+      </section>
+    </div>
+    <div id="contact-area">
+      <section id="contact-details">
+        <h4>Addres:</h4>
+        <p>Benin City, Nigeria</p>
+        <h4>Email:</h4>
+        <p>odehevans@gmail.com</p>
+        <h4>Phone:</h4>
+        <p>+2348151772859</p>
+      </section>
+      <section id="contact-form">
+        <div id="feedback"></div>
+
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_email" />
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">Send your message</button>
+        </li>
+      </ul>
+    </form>
+      </section>
+    </div>
+    
+  </main>
+  <footer>
+    <p>My Portfolio &copy; 2022 - Evans Odeh</p>
+    <p><a href="site-plan.html">Site Plan</a></p>
+    <p><a href="contact.html">Get in Touch</a></p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="fb icon" />
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="twitter icon" />
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="instagram icon" />
+      </a>
+    </div>
+  </footer>
+  <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</body>
+
+</html>
