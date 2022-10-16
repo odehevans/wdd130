@@ -102,7 +102,6 @@ nav a:hover{
 
 /* Work Experience page */
 
-
 #title-area {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -130,63 +129,43 @@ nav a:hover{
   width: 100%;
   height: 100%;
   background-color: #457B9D;
+  opacity: 0.8;
 }
 
 .title-text {
   grid-column: 2/4;
   grid-row: 2/4;
-  /* width: 100%;
-  height: 100%; */
-}
-
-#hero-msg{
-  grid-column: 2/3;
-  grid-row: 1/2;
-  margin-top: 100px;
-}
-
-#hero-msg h1, #hero-msg h4 {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
   text-align: center;
-  color: #F1FAEE;
+  z-index: 1;
 }
 
-
-h4 {
-  color: #333333;
-}
-
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-}
-
-main section {
+#work-details {
+  width: 100%;
   text-align: center;
 }
 
-main section img {
-  box-sizing: border-box;
+#work-details hr {
+  width: 50%;
 }
 
-
-.msg {
-  grid-column: 6/10;
-  grid-row: 6/7;
-  background-color: #FFFFFF;
-  line-height: 1.5em;
-  padding: 35px;
-  box-shadow: 5px 5px 10px #333333;
+#work-details section{
+  width: 50%;
+  margin: 0px auto;
+  padding: 20px 0;
 }
 
-.msg h2 {
-  color: #333333;
-  font-family: "Berkshire Swash", "Brush Script MT", serif;
+#work-details section p{
+  text-align: left;
 }
-.msg p {
-  color: #333333;
-  font-size: .8em;
-  padding-bottom: 15px;
+
+#work-details section span{
+  font-weight: normal;
 }
+
 
 
 footer {
